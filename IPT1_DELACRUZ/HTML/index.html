@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPT Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <button id="mode-toggle" class="mode-toggle">🌙</button>
+        <div class="menu-btn" id="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#anime-favorites">Anime Favorites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="about" class="section">
+            <div class="content">
+                <img src="Meee.jpg" class="ako">
+                <h1>Hello, I'm Angelo I. Dela Cruz</h1>
+                <p>Hi, I’m Angelo, a third-year Bachelor of Science in Computer Technology major at City of Malabon University. I’m particularly interested in web development and networking, and I love learning how technology shapes our world. In my free time, I enjoy exploring new programming languages, watching tech-related YouTube channels, and playing video games with friends. I also love watching anime series which is what I always do when I'm bored.</p>
+            </div>
+        </section>
+
+        <section id="anime-favorites" class="section">
+            <h2>My Anime Favorites</h2>
+            <div class="anime-grid">
+                <div class="anime-item">
+                    <img src="OnePiece.webp" alt="One Piece" class="anime-img" />
+                    <p class="anime-name">One Piece</p>
+                </div>
+                <div class="anime-item">
+                    <img src="SoloLeveling.png" alt="Solo Leveling" class="anime-img" />
+                    <p class="anime-name">Solo Leveling</p>
+                </div>
+                <div class="anime-item">
+                    <img src="DitF.webp" alt="Darling in the FRANXX" class="anime-img" />
+                    <p class="anime-name">Darling in the FRANXX</p>
+                </div>
+                <div class="anime-item">
+                    <img src="Slime-san.jpg" alt="That Time I Got Reincarnated as a Slime" class="anime-img" />
+                    <p class="anime-name">That Time I Got Reincarnated as a Slime</p>
+                </div>
+                <div class="anime-item">
+                    <img src="BlackClover.jpg" alt="Black Clover" class="anime-img" />
+                    <p class="anime-name">Black Clover</p>
+                </div>
+            </div>
+        </section>
+        <section id="calculator" class="section">
+            <div class="calculator">
+                <input type="text" id="display" class="display" disabled />
+                <div class="buttons">
+                    <button class="btn clear" onclick="clearDisplay()">C</button>
+                    <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+                    <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+                    <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+        
+                    <button class="btn" onclick="appendToDisplay('7')">7</button>
+                    <button class="btn" onclick="appendToDisplay('8')">8</button>
+                    <button class="btn" onclick="appendToDisplay('9')">9</button>
+                    <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+        
+                    <button class="btn" onclick="appendToDisplay('4')">4</button>
+                    <button class="btn" onclick="appendToDisplay('5')">5</button>
+                    <button class="btn" onclick="appendToDisplay('6')">6</button>
+                    <button class="btn equal" onclick="calculateResult()">=</button>
+        
+                    <button class="btn" onclick="appendToDisplay('1')">1</button>
+                    <button class="btn" onclick="appendToDisplay('2')">2</button>
+                    <button class="btn" onclick="appendToDisplay('3')">3</button>
+        
+                    <button class="btn zero" onclick="appendToDisplay('0')">0</button>
+                    <button class="btn" onclick="appendToDisplay('.')">.</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Sir about po sa picture, need nya nakasama silang lahat sa isang folder ayaw po kasi gumana ng pics pag nakahiwalay-->
